@@ -4,9 +4,7 @@
 // JS test --> console.log("hello  world"); 
 
 addNewStudent = () => {
-
-    let newForm = document.getElementById("form");
-
+    
     let fullName = document.getElementById("fName_sName").value;
     
     //delimiting fullname var 
@@ -29,10 +27,12 @@ addNewStudent = () => {
 
     //checking inputs grabbed 
     console.log(fName + " " + sName + " " + email + " " + telNumber + " " + subjChoice + " " + userPassword + " " + checkFlag);
-
+//Well, well, well... why don't you want to sign up for our newsletter... you don't seem to be that interested Name & Surname!  If you want to sign up, you better CHECK that newsletter box! 
     if(checkFlag === true){
-
+        alert("Welcome " + fName + " " + sName + "! Thank you for your interest in " + subjChoice + "! We will contact you via the email provided: " + email + ", or alternatively on the phone number: " + telNumber + ".");
     }else{
-
+        alert("Well, well, well... why don't you want to sign up for our newsletter... you don't seem to be that interestd " + fName + " " + sName + "! If you want to sign up, you better check that newsletter box!");
     }
+
+    document.getElementById("form");
 }
