@@ -5,7 +5,8 @@
 
 addNewStudent = () => {
 
-    let newForm = document.getElementById("form")
+    let newForm = document.getElementById("form");
+
     let fullName = document.getElementById("fName_sName").value;
     
     //delimiting fullname var 
@@ -28,4 +29,10 @@ addNewStudent = () => {
 
     //checking inputs grabbed 
     console.log(fName + " " + sName + " " + email + " " + telNumber + " " + subjChoice + " " + userPassword + " " + checkFlag);
+
+    if(checkFlag === true){
+
+    }else{
+
+    }
 }
